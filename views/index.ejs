@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cocktail Generator</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Medula+One&family=Over+the+Rainbow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Cocktail number <%= id %>: <br> <span><%= title %></span></div>
+        <div class="box">
+            <span class="notes">Ingredients:</span>
+            <% for( let i = 0; i < quantity.length; i++ ) { %>
+                <li><%=quantity[i]%> <%=ingredients[i]%></li>
+            <% } %>
+        </div>
+        <form action="/random" method="post">
+            <button>New Drink</button>
+        </form>
+    </div>
+
+    <div class="image"> <img src= "<%= image %>" alt=""> </div>
+</body>
+</html>

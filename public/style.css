@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Medula+One&display=swap');
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+img{
+    height: 105vh;
+    width: auto;
+    margin-right: -30px;
+    overflow: hidden;
+    border-radius: 40% 0% 0% 30%;
+}
+.container{
+    color: #f4dfc8;
+    padding: 50px;
+}
+
+.title{
+    font-family: "Medula One", system-ui;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 5rem;
+    margin-top: -40px;
+    margin-bottom: 100px;
+}
+span{
+    font-family: "Almendra Display", serif;
+    font-weight: 800;
+    color: #faf6f0;
+}
+li{
+    font-family: "Over the Rainbow", cursive;
+    font-weight: 700;
+    list-style-type: none;
+}
+.box{
+    border: 3px solid;
+    padding: 30px;
+    margin: 10px;
+}
+
+button{
+    border: 3px solid #f4dfc8;
+    border-radius: 15px;
+    display: inline;
+    padding: 15px;
+    position: relative;
+    top: 15px;
+    left: 35%;
+    font-family: "Medula One", system-ui;
+    background-color: #000;
+    color: #f4dfc8;
+    font-size: 50px;
+}
+
+button:hover{
+    background-color: #f4dfc8;
+    border-radius: 0px;
+    color: #000;
+    transition: ease-in-out 0.5s;
+}
+.notes{
+    font-family: "Medula One", system-ui;
+    font-size: 40px;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 40px;
+}
