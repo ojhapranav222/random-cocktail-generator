@@ -1,19 +1,16 @@
 {
     "version": 2,
-    "functions": {
-        "api/**/*.js": {
-        "memory": 1024,
-        "maxDuration": 10
-        }
-    },
     "builds": [
-        {
-        "src": "api/**/*.js",
+      {
+        "src": "/index.js",
         "use": "@vercel/node"
-        }
+      }
     ],
     "routes": [
-        { "src": "/api/cocktail", "dest": "/api/cocktail.js" },
-        { "src": "/(.*)", "dest": "/public/$1" }
+      {
+        "src": "/(.*)",
+        "dest": "/index.js"
+      }
     ]
-}
+  }
+  
